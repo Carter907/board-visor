@@ -12,7 +12,7 @@ function Board({team, onSquareClicked, coordsVisible}: BoardProps) {
         for (let j = 0; j < 8; j++) {
             if ((i + j) % 2 == 0) {
                 squares.push(
-                    <div className="shadow-inner size-28 bg-stone-200 flex flex-col justify-center" onClick={() => {onSquareClicked(i, j)}}>
+                    <div className="shadow-inner size-12 md:size-28 bg-stone-200 flex flex-col justify-center" onClick={() => {onSquareClicked(i, j)}}>
                         <p className="text-neutral-800 text-4xl text-center opacity-20 select-none" style={coordsVisible ? {visibility: "visible"} : {visibility: "hidden"}}>
                             {posToCoord(team, i, j)}
                         </p>
@@ -20,7 +20,7 @@ function Board({team, onSquareClicked, coordsVisible}: BoardProps) {
                 )
             } else {
                 squares.push(
-                    <div className="shadow-inner size-28 bg-neutral-700 flex flex-col justify-center" onClick={() => {onSquareClicked(i, j)}}>
+                    <div className="shadow-inner size-12 md:size-28 bg-neutral-700 flex flex-col justify-center" onClick={() => {onSquareClicked(i, j)}}>
                         <p className="text-stone-100 text-4xl text-center opacity-20 select-none" style={coordsVisible ? {visibility: "visible"} : {visibility: "hidden"}}>
                             {posToCoord(team, i,j)}
                         </p>
