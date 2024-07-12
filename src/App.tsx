@@ -42,7 +42,7 @@ function App() {
                             <p className="text-5xl opacity-80 p-4">{square}</p>
                         </div>
                         <div
-                            className={correct ? "m-auto bg-green-500 opacity-80 rounded-full size-12 md:size-28" : "m-auto size-12 md:size-28 bg-red-500 dark:text-white opacity-80 rounded-full"}>
+                            className={correct ? "m-auto bg-green-500 opacity-80 rounded-full size-16 md:size-28" : "m-auto size-16 md:size-28 bg-red-500 dark:text-white opacity-80 rounded-full"}>
                             <p>{correct ? "" : ""}</p>
                         </div>
                     </div>
